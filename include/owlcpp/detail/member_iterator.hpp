@@ -39,7 +39,10 @@ private:
 
    bool equal(Member_iterator const& i) const {return iter_ == i.iter_;}
 
-   Value& dereference() const { return (*iter_).*Member; }
+   Value const& dereference() const {
+	  Iter::value_type const& i = *iter_;
+	  return i.*Member;
+   }
 };
 
 }//namespace owlcpp

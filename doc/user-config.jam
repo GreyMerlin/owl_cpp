@@ -68,6 +68,9 @@
 ## http://www.zlatkovic.com/libxml.en.html
 # constant ICONV : "$(utils)/cpp/iconv-1.9.2.win32" 1.9.2 ;
 
+## Under MSVS 2015 this may be also required:
+# constant ICONV_STATIC_ADDON_LIB : "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/lib/legacy_stdio_definitions.lib" ;
+
 ## Raptor library source
 ## http://librdf.org/raptor/
 # constant RAPTOR : "$(utils)/raptor2-2.0.15" 2.0.15 ;

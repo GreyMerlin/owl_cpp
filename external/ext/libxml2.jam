@@ -163,6 +163,7 @@ rule init ( version ? : location ? : options * ) {
             <include>$(ICONV_H)
             <link>shared:<file>$(ICONV_DLL)
             <link>static:<file>$(ICONV_LIB)
+            <link>static:<file>$(ICONV_STATIC_ADDON_LIB)
          : #default options
          : #usage requirements
             <include>$(ICONV_H)
